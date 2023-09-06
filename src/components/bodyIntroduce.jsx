@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import listnft from "../assets/listnft.png";
 import share from "../assets/share.png";
 import dollar from "../assets/dollar.png";
@@ -12,7 +12,7 @@ import withdraw from "../assets/withdraw.png";
 import find from "../assets/find.png";
 import share2 from "../assets/share2.png";
 
-const BodyIntroduce = ({ isVisible }) => {
+const BodyIntroduce = () => {
   const [showCreateContentClicked, setShowCreateContentClicked] =
     useState(true);
 
