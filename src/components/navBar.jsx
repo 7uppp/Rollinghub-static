@@ -15,9 +15,16 @@ const NavBar = () => {
             "social_platform_container flex justify-between items-center gap-[30px]"
           }
         >
-          <img src={discord} alt="discord" />
-          <img src={twitter} alt="twitter" />
-          <img src={telegram} alt="telegram" />
+          <a href="">
+            <img src={discord} alt="discord" className={"cursor-pointer"} />
+          </a>
+          <a href="">
+            <img src={twitter} alt="twitter" className={"cursor-pointer"} />
+          </a>
+
+          <a href="">
+            <img src={telegram} alt="telegram" className={"cursor-pointer"} />
+          </a>
         </div>
       </div>
     </div>

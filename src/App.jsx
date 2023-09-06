@@ -1,6 +1,7 @@
 import Navbar from "./components/navBar.jsx";
 import Introduce from "./components/introduce.jsx";
 import BodyIntroduce from "./components/bodyIntroduce.jsx";
+import NewsLetter from "./components/newsLetter.jsx";
 
 function App() {
   return (
@@ -13,8 +14,11 @@ function App() {
           <Introduce />
         </div>
       </div>
-
       <BodyIntroduce />
+      <NewsLetter />
+      <div
+        className={" w-full h-[50px] border border-1 bg-purple-950 mt-[146px] "}
+      ></div>
     </div>
   );
 }
