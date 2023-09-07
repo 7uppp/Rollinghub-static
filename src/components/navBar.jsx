@@ -25,7 +25,7 @@ const NavBar = () => {
             <img
               src={twitter}
               alt="twitter"
-              className={'cursor-pointer w-[2.375rem'}
+              className={'cursor-pointer w-[2.375rem]'}
             />
           </a>
 
@@ -33,7 +33,7 @@ const NavBar = () => {
             <img
               src={telegram}
               alt="telegram"
-              className={'cursor-pointer w-[2.375rem'}
+              className={'cursor-pointer w-[2.375rem]'}
             />
           </a>
         </div>

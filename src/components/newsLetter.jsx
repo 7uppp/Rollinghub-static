@@ -1,18 +1,20 @@
-import update from '../assets/update.svg'
 import { useState } from 'react'
+import axios from 'axios'
+import update from '../assets/update.svg'
 
 const NewsLetter = () => {
   const [input, setInput] = useState('')
   const handleInputChange = (event) => {
     setInput(event.target.value)
   }
+  const url = import.meta.env.VITE_SAVE_EMAIL_URL
 
   const handleButtonClick = async () => {
+    if (!input) return
+
     try {
-      const response = await axios.post('YOUR_BACKEND_URL', {
-        data: input,
-      })
-      console.log('Response from backend:', response.data)
+      await axios.post(url, { email: input })
+      window.alert("Thanks for your email! We'll keep you updated!")
     } catch (error) {
       console.error('Error sending data to backend:', error)
     }
@@ -48,7 +50,7 @@ const NewsLetter = () => {
           value={input}
           onChange={handleInputChange}
         />
-        <button onClick={handleButtonClick}>
+        <button type="button" onClick={handleButtonClick}>
           <img src={update} alt="emailupdate" />
         </button>
       </div>

@@ -14,7 +14,18 @@ import find from '../assets/find.png'
 import share2 from '../assets/share2.png'
 
 const BodyIntroduce = () => {
-  const [showCreateContentClicked, setShowCreateContentClicked] = useState(true)
+  const [button1Clicked, setButton1Clicked] = useState(true)
+  const [button2Clicked, setButton2Clicked] = useState(false)
+
+  const handleButton1Click = () => {
+    setButton1Clicked(true)
+    setButton2Clicked(false)
+  }
+
+  const handleButton2Click = () => {
+    setButton1Clicked(false)
+    setButton2Clicked(true)
+  }
 
   return (
     <div
@@ -32,26 +43,26 @@ const BodyIntroduce = () => {
             'buttons flex justify-center items-center gap-[15.125rem]'
           }>
           <button
-            className={
-              'button_1 text-[1.5rem] font-bold text-gray-500 hover:text-blue-600 outline-none'
-            }
+            className={`button_1 text-[1.5rem] font-bold ${
+              button1Clicked ? 'text-blue-700' : 'text-gray-500'
+            } outline-none`}
             onClick={() => {
-              setShowCreateContentClicked(true)
+              handleButton1Click()
             }}>
             Create boxes & list NFTs
           </button>
           <button
-            className={
-              'button_2  text-[1.5rem] font-bold text-gray-500 hover:text-blue-600 outline-none'
-            }
+            className={`button_2  text-[1.5rem] font-bold ${
+              button2Clicked ? 'text-blue-700' : 'text-gray-500'
+            } outline-none`}
             onClick={() => {
-              setShowCreateContentClicked(false)
+              handleButton2Click()
             }}>
             Buy tickets & win NFTs
           </button>
         </div>
 
-        {showCreateContentClicked ? (
+        {button1Clicked ? (
           <div
             className={
               'create_boxes_contents flex gap-[10.3125rem] mt-[4.375rem]'
