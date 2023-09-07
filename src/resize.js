@@ -9,5 +9,5 @@ function setRootFontSize () {
   const newFontSize = (screenWidth / baseWidth) * baseFontSize
   document.documentElement.style.fontSize = `${newFontSize}px`
 
-  console.log(`screenWidth: ${screenWidth}, newFontSize: ${newFontSize}`)
+  // console.log(`screenWidth: ${screenWidth}, newFontSize: ${newFontSize}`)
 }
