@@ -150,7 +150,8 @@ const BodyIntroduce = () => {
                   className={
                     'w-[353px] whitespace-wrap text-[18px] text-center h-[60px]'
                   }>
-                  Help the box to draw.
+                  It's a good idea to call friends and communities to take
+                  tickets from the box you participated.
                 </p>
               </div>
             </motion.div>
@@ -174,8 +175,9 @@ const BodyIntroduce = () => {
                   className={
                     'w-[353px] whitespace-wrap text-[18px] text-center  h-[60px]'
                   }>
-                  You can withdraw NFTs you win to your wallets, or list them in
-                  a box directly.
+                  when the total asset value is accumulated, winner become the
+                  new owners of the assets, and the other participants get
+                  rewards.
                 </p>
               </div>
             </motion.div>
