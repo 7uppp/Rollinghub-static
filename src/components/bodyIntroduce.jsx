@@ -274,12 +274,12 @@ const BodyIntroduce = () => {
         <img
           src={leftShadow}
           alt="leftShadow"
-          className={'absolute left-[-15rem] top-[-12.5rem]'}
+          className={'absolute left-[-15rem] top-[-12.5rem] w-[10.5rem]'}
         />
         <img
           src={rightShadow}
           alt="rightShadow"
-          className={'absolute right-[-25rem] top-[-34.375rem]'}
+          className={'absolute right-[-25rem] top-[-34.375rem] w-[11.9375rem]'}
         />
       </div>
     </div>
