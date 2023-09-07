@@ -1,0 +1,57 @@
+.button_1 {
+  position: relative;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.button_1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: width 0.3s;
+}
+
+.button_1:hover::before {
+  width: 100%;
+}
+
+.button_2 {
+  position: relative;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.button_2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: width 0.3s;
+}
+
+.button_2:hover::before {
+  width: 100%;
+}
