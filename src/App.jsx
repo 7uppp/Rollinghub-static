@@ -9,7 +9,10 @@ function App() {
       className={
         'w-[118.75rem] flex flex-col mx-auto justify-center items-center'
       }>
-      <div className={' bg-hero-pattern h-[68.3125rem] px-[14.875rem]'}>
+      <div
+        className={
+          ' bg-hero-pattern bg-no-repeat bg-cover h-[68.3125rem] px-[14.875rem]'
+        }>
         <div className={'flex flex-col'}>
           <Navbar />
           <Introduce />
