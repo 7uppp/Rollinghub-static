@@ -26,7 +26,7 @@ jobs:
         run: npm install
 
       - name: Set environment variable
-        run: echo "VITE_SAVE_EMAIL_URL=https://api.rollingonline.win/userInfo/getNewsletter" > .env
+        run: echo "VITE_SAVE_EMAIL_URL=${{ secrets.VITE_SAVE_EMAIL_URL_SECRET }}" > .env
 
       - name: Build
         run: npm run build
