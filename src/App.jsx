@@ -9,7 +9,7 @@ function App() {
     <ChakraProvider>
       <div
         className={
-          'w-[118.75rem] flex flex-col mx-auto justify-center items-center'
+          'w-[118.75rem] flex flex-col mx-auto justify-center items-center overflow-hidden'
         }>
         <div
           className={

@@ -6,6 +6,7 @@ import { useToast } from '@chakra-ui/react'
 const NewsLetter = () => {
   const [input, setInput] = useState('')
   const toast = useToast()
+
   const handleInputChange = (event) => {
     setInput(event.target.value)
   }
@@ -16,12 +17,14 @@ const NewsLetter = () => {
 
     try {
       await axios.post(url, { email: input })
+
       toast({
         title: 'Success',
         description: 'Thanks for your email! We will keep you updated!',
         status: 'success',
         duration: 5000,
         isClosable: true,
+        position: 'top',
       })
     } catch (error) {
       console.error('Error sending data to backend:', error)

@@ -29,6 +29,7 @@ const BodyIntroduce = () => {
 
   return (
     <div
+      id="how_it_works"
       className={
         'bodyIntroduce_container w-[87.3125rem] flex flex-col justify-center items-center '
       }>
