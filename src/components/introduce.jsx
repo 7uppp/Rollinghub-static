@@ -17,7 +17,7 @@ const Introduce = () => {
               INTRODUCING ROLLINGHUB
             </span>
           </div>
-          <div className={'the_first_raffle_marketplace w-[33rem]'}>
+          <div className={'the_first_raffle_marketplace w-[43.75rem]'}>
             <span className={'text-white text-[4.5rem]'}>
               <TypingComponent />
             </span>
