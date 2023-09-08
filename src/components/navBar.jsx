@@ -21,13 +21,15 @@ const NavBar = () => {
               className={'cursor-pointer w-[2.375rem]'}
             />
           </a>
-          <a href="https://twitter.com/rollinghub">
-            <img
-              src={twitter}
-              alt="twitter"
-              className={'cursor-pointer w-[2.375rem]'}
-            />
-          </a>
+
+          <img
+            src={twitter}
+            alt="twitter"
+            className={'cursor-pointer w-[2.375rem]'}
+            onClick={() => {
+              window.open('https://twitter.com/rollinghub')
+            }}
+          />
 
           <a href="">
             <img

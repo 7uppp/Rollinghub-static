@@ -80,8 +80,9 @@ const NewsLetter = () => {
           className="flex items-center justify-between w-full">
           <input
             type="text"
+            style={{ fontSize: '1.5rem' }}
             placeholder={'Enter Your email here'}
-            className={'outline-none bg-transparent'}
+            className={'outline-none bg-transparent w-[90%]'}
             value={email}
             onChange={handleInputChange}
           />
