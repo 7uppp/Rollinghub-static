@@ -21,7 +21,7 @@ const NavBar = () => {
               className={'cursor-pointer w-[2.375rem]'}
             />
           </a>
-          <a href="">
+          <a href="https://twitter.com/rollinghub">
             <img
               src={twitter}
               alt="twitter"

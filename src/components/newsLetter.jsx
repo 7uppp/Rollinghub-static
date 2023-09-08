@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import axios from 'axios'
-import update from '../assets/update.svg'
+import update from '../assets/update.png'
+import { useToast } from '@chakra-ui/react'
 
 const NewsLetter = () => {
   const [input, setInput] = useState('')
+  const toast = useToast()
   const handleInputChange = (event) => {
     setInput(event.target.value)
   }
@@ -14,7 +16,13 @@ const NewsLetter = () => {
 
     try {
       await axios.post(url, { email: input })
-      window.alert("Thanks for your email! We'll keep you updated!")
+      toast({
+        title: 'Success',
+        description: 'Thanks for your email! We will keep you updated!',
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
     } catch (error) {
       console.error('Error sending data to backend:', error)
     }
@@ -51,7 +59,7 @@ const NewsLetter = () => {
           onChange={handleInputChange}
         />
         <button type="button" onClick={handleButtonClick}>
-          <img src={update} alt="emailupdate" />
+          <img src={update} alt="emailupdate" className="w-[2.125rem]" />
         </button>
       </div>
     </div>

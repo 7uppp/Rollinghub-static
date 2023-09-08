@@ -203,7 +203,7 @@ const BodyIntroduce = () => {
                 </span>
                 <p
                   className={
-                    'w-[22.0625rem] whitespace-wrap text-[1.125rem] text-center  h-[3.75rem]'
+                    'w-[22.0625rem] whitespace-wrap text-[1.125rem] text-center h-[3.75rem]'
                   }>
                   when the total asset value is accumulated, winner become the
                   new owners of the assets, and the other participants get
@@ -235,7 +235,7 @@ const BodyIntroduce = () => {
             className={
               'submit-proposal flex flex-col justify-center items-center gap-[2.5rem]'
             }>
-            <img src={submit} alt="submit" />
+            <img src={submit} alt="submit" className="w-[6rem] mx-auto" />
             <span className={'text-[1.5rem] font-semibold text-center'}>
               Submit a proposal for review
             </span>
@@ -252,7 +252,7 @@ const BodyIntroduce = () => {
             className={
               'on-chain flex flex-col justify-center items-center gap-[2.5rem]'
             }>
-            <img src={onchain} alt="onchain" />
+            <img src={onchain} alt="onchain" className="w-[6rem] mx-auto" />
             <span className={'text-[1.5rem] font-semibold text-center'}>
               On-chain governance
             </span>
@@ -270,7 +270,7 @@ const BodyIntroduce = () => {
             className={
               'community-driven flex flex-col justify-center items-center gap-[2.5rem]'
             }>
-            <img src={community} alt="community" />
+            <img src={community} alt="community" className="w-[6rem] mx-auto" />
             <span className={'text-[1.5rem] font-semibold text-center '}>
               Community-driven
             </span>

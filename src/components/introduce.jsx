@@ -1,3 +1,4 @@
+import TypingComponent from './typeWriter'
 import gift from '../assets/gift.png'
 
 const Introduce = () => {
@@ -18,7 +19,7 @@ const Introduce = () => {
           </div>
           <div className={'the_first_raffle_marketplace w-[33rem]'}>
             <span className={'text-white text-[4.5rem]'}>
-              The First Raffle Marketplace
+              <TypingComponent />
             </span>
           </div>
           <div className={'introducing_sentence w-[41.4375rem] mt-[1.25rem] '}>
