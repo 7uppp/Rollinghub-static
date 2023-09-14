@@ -1,4 +1,4 @@
-import TypingComponent from './typeWriter'
+import TypeWriter from './typeWriter'
 import gift from '../assets/gift.png'
 import { motion } from 'framer-motion'
 
@@ -36,7 +36,7 @@ const Introduce = () => {
           </div>
           <div className={'the_first_raffle_marketplace w-[43.75rem]'}>
             <span className={'text-white text-[4.5rem]'}>
-              <TypingComponent />
+              <TypeWriter />
             </span>
           </div>
           <div className={'introducing_sentence w-[41.4375rem] mt-[1.25rem] '}>
