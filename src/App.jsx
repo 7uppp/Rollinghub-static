@@ -17,12 +17,14 @@ function App() {
 
   return (
     <>
-      <div
-        className={`fixed top-0 left-0 w-full h-full z-10 ${
-          isLoading ? 'fade-in' : 'fade-out'
-        }`}>
-        <LoadingPage />
-      </div>
+      {isLoading && (
+        <div
+          className={`fixed top-0 left-0 w-full h-full ${
+            isLoading ? 'fade-in' : 'fade-out'
+          }`}>
+          <LoadingPage />
+        </div>
+      )}
       <ChakraProvider>
         <div
           className={`w-[118.75rem] flex flex-col mx-auto justify-center items-center overflow-hidden ${
