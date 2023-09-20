@@ -1,1 +1,1 @@
-# This is the static website （version 1） for RollingHub
+# version 1 for RollingHub static website
